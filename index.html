@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manjil Dangol — Visuals. Stories. Digital Experiences.</title>
+<meta name="description" content="Manjil Dangol — Video Editor, Videographer, Photographer & Creative Developer from Lalitpur, Nepal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="vignette"></div>
+<div class="progress" id="progress"></div>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"><span class="cursor-label" id="cursorLabel">VIEW</span></div>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-name">MANJIL DANGOL</div>
+  <div class="loader-bar-wrap"><div class="loader-bar" id="loaderBar"></div></div>
+  <div class="loader-pct" id="loaderPct">00</div>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#hero" class="nav-logo">MD / DANGOL</a>
+  <div class="nav-links" id="navLinks">
+    <a href="works.html" class="nav-link">WORKS</a>
+    <a href="#about" class="nav-link">ABOUT</a>
+    <a href="#skills" class="nav-link">SKILLS</a>
+    <a href="#photo" class="nav-link">PROJECTS</a>
+    <a href="#contact" class="nav-link">CONTACT</a>
+  </div>
+  <a href="#contact" class="nav-cta">LET'S TALK</a>
+  <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-bg-grid"></div>
+  <div class="hero-frame"><span>REC · 00:00:00:00</span><span>SONY FX3 · 24FPS · 4:2:2</span></div>
+
+  <div class="hero-top">
+    <div class="hero-loc">
+      <div class="eyebrow"><span class="dot"></span>LALITPUR, NEPAL</div>
+      <div class="tag">AVAILABLE FOR CREATIVE PROJECTS — SHOOTING, EDITING &amp; BUILDING</div>
+    </div>
+    <div class="hero-roles">
+      VIDEO EDITOR<br>VIDEOGRAPHER<br>PHOTOGRAPHER<br>CREATIVE DEVELOPER
+    </div>
+  </div>
+
+  <div class="hero-main">
+    <h1 class="hero-name overflow-mask"><span class="reveal-name">MANJIL <span class="accent-word">DANGOL</span></span></h1>
+    <p class="hero-statement reveal">“I turn ideas into visual experiences.”</p>
+    <p class="hero-sub reveal">19-year-old creative from Lalitpur, Nepal — cinematic edits, photography, motion graphics and digital experiences, cut together with intention.</p>
+    <div class="hero-ctas reveal">
+      <a href="#work" class="btn btn-solid"><span>VIEW MY WORK</span><span>→</span></a>
+      <a href="#contact" class="btn btn-outline"><span>LET'S WORK TOGETHER</span><span>→</span></a>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span class="line"></span><span class="tc">SCROLL</span></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-track" id="marquee1">
+    <span><em>PREMIERE PRO</em> · AFTER EFFECTS · PHOTOSHOP · LIGHTROOM · HTML · CSS · <em>JAVASCRIPT</em> · JAVA</span>
+    <span><em>PREMIERE PRO</em> · AFTER EFFECTS · PHOTOSHOP · LIGHTROOM · HTML · CSS · <em>JAVASCRIPT</em> · JAVA</span>
+  </div>
+</div>
+
+<!-- WORK -->
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title reveal">SELECTED<br>WORK</h2>
+      <p class="tc reveal">04 DISCIPLINES · 2024 — 2026</p>
+    </div>
+  </div>
+  <div class="work-grid">
+    <a class="work-card reveal" data-view="VIEW" href="#featured">
+      <div class="wc-bg" style="background-image:url('https://images.unsplash.com/photo-1536240478700-b869070f9279?w=1200&q=60')"></div>
+      <span class="wc-tc">00:01</span>
+      <span class="wc-title">CINEMATIC MONTAGE</span>
+      <span class="wc-meta"><span class="wc-role">EDITING · COLOR GRADING · SOUND DESIGN</span><span class="wc-tools">PREMIERE PRO / DAVINCI · 2026</span></span>
+    </a>
+    <a class="work-card reveal" data-view="VIEW" href="#featured">
+      <div class="wc-bg" style="background-image:url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1200&q=60')"></div>
+      <span class="wc-tc">00:02</span>
+      <span class="wc-title">FIELD &amp; FRAME</span>
+      <span class="wc-meta"><span class="wc-role">VIDEOGRAPHY · DIRECTION</span><span class="wc-tools">SONY FX3 · 2025</span></span>
+    </a>
+    <a class="work-card reveal" data-view="VIEW" href="#photo">
+      <div class="wc-bg" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=60')"></div>
+      <span class="wc-tc">00:03</span>
+      <span class="wc-title">THROUGH MY LENS</span>
+      <span class="wc-meta"><span class="wc-role">PHOTOGRAPHY · EDITORIAL</span><span class="wc-tools">LIGHTROOM · 2025—26</span></span>
+    </a>
+    <a class="work-card reveal" data-view="VIEW" href="#dev">
+      <div class="wc-bg" style="background-image:url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&q=60')"></div>
+      <span class="wc-tc">00:04</span>
+      <span class="wc-title">BEYOND THE FRAME</span>
+      <span class="wc-meta"><span class="wc-role">WEB &amp; ECOMMERCE DEVELOPMENT</span><span class="wc-tools">HTML / CSS / JS / JAVA · 2026</span></span>
+    </a>
+  </div>
+</section>
+
+<!-- FEATURED PROJECT -->
+<section class="featured" id="featured">
+  <div class="featured-bg" id="featuredBg"></div>
+  <div class="featured-content">
+    <div class="eyebrow reveal"><span class="dot"></span>FEATURED · TC 00:04:12:08</div>
+    <h2 class="featured-title reveal">THE JOURNEY</h2>
+    <p class="featured-sub reveal">A cinematic visual story</p>
+    <div class="featured-meta reveal">
+      <div><span class="fm-label">ROLE</span><span class="fm-value">Video Editor / Videographer</span></div>
+      <div><span class="fm-label">TOOLS</span><span class="fm-value">Premiere Pro / After Effects / Photoshop</span></div>
+      <div><span class="fm-label">YEAR</span><span class="fm-value">2026</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-visual reveal">
+      <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=900&q=60" alt="Manjil Dangol at work">
+    </div>
+    <div class="about-text">
+      <div class="eyebrow reveal" style="margin-bottom:18px;"><span class="dot"></span>WHO IS MANJIL?</div>
+      <h2 class="section-title reveal">WHO IS<br>MANJIL?</h2>
+      <p class="about-lede reveal">A 19-year-old visual creator from Lalitpur, Nepal.</p>
+      <p class="about-body reveal">I work across <strong>video editing, videography, photography and motion graphics</strong>, while also exploring web development and programming. I like combining <strong>storytelling, design and technology</strong> — using code the way I use a timeline, as another tool for building something worth looking at.</p>
+      <p class="about-body reveal">My work spans cinematic edits and photography projects, Java and ecommerce builds, and interactive websites in HTML, CSS and JavaScript — all shot, cut or coded with the same attention to pacing and detail.</p>
+      <div class="about-tags reveal">
+        <span>Video Editing</span><span>Videography</span><span>Photography</span><span>Motion Graphics</span><span>Web Development</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title reveal">SKILLS</h2>
+      <p class="tc reveal">HOVER TO EXPAND</p>
+    </div>
+    <div class="skills-cols">
+      <div class="skills-col">
+        <div class="skills-col-label">// CREATIVE</div>
+        <div class="skill-row" style="--pct:.95">
+          <div class="skill-row-top"><span class="skill-name">VIDEO EDITING</span><div class="skill-bar"><i></i></div></div>
+          <div class="skill-desc">Storytelling through pacing, sound, color and visual rhythm.</div>
+        </div>
+        <div class="skill-row" style="--pct:.9">
+          <div class="skill-row-top"><span class="skill-name">VIDEOGRAPHY</span><div class="skill-bar"><i></i></div></div>
+          <div class="skill-desc">Framing and movement that carry a scene before it's ever cut.</div>
+        </div>
+        <div class="skill-row" style="--pct:.88">
+          <div class="skill-row-top"><span class="skill-name">PHOTOGRAPHY</span><div class="skill-bar"><i></i></div></div>
+          <div class="skill-desc">Composition, light and moments — frozen with intention.</div>
+        </div>
+        <div class="skill-row" style="--pct:.8">
+          <div class="skill-row-top"><span class="skill-name">MOTION GRAPHICS</span><div class="skill-bar"><i></i></div></div>
+          <div class="skill-desc">Typography and shape animated to carry a feeling, not just move.</div>
+        </div>
+      </div>
+      <div class="skills-col">
+        <div class="skills-col-label">// DEVELOPMENT</div>
+        <div class="skill-row" style="--pct:.75">
+          <div class="skill-row-top"><span class="skill-name">HTML</span><div class="skill-bar"><i></i></div></div>
+          <div class="skill-desc">Clean, semantic structure as the foundation for everything else.</div>
+        </div>
+        <div class="skill-row" style="--pct:.75">
+          <div class="skill-row-top"><span class="skill-name">CSS</span><div class="skill-bar"><i></i></div></div>
+          <div class="skill-desc">Layout and motion — the visual grammar of a web page.</div>
+        </div>
+        <div class="skill-row" style="--pct:.7">
+          <div class="skill-row-top"><span class="skill-name">JAVASCRIPT</span><div class="skill-bar"><i></i></div></div>
+          <div class="skill-desc">Bringing interfaces to life with interaction and logic.</div>
+        </div>
+        <div class="skill-row" style="--pct:.6">
+          <div class="skill-row-top"><span class="skill-name">JAVA</span><div class="skill-bar"><i></i></div></div>
+          <div class="skill-desc">Basic programming fundamentals through hands-on projects.</div>
+        </div>
+        <div class="skill-row" style="--pct:.65">
+          <div class="skill-row-top"><span class="skill-name">ECOMMERCE DEV</span><div class="skill-bar"><i></i></div></div>
+          <div class="skill-desc">Building simple, functional online stores from the ground up.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTOGRAPHY -->
+<section class="photo" id="photo">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title reveal">THROUGH<br>MY LENS</h2>
+      <p class="tc reveal">Frames, stories and moments.</p>
+    </div>
+    <div class="photo-grid">
+      <div class="photo-item pi-1 reveal"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900&q=60" alt=""><span class="p-cap">STREET / KATHMANDU</span></div>
+      <div class="photo-item pi-2 reveal"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=60" alt=""><span class="p-cap">HILLS / LALITPUR</span></div>
+      <div class="photo-item pi-3 reveal"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=900&q=60" alt=""><span class="p-cap">PORTRAIT</span></div>
+      <div class="photo-item pi-4 reveal"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=900&q=60" alt=""><span class="p-cap">TEMPLE LIGHT</span></div>
+      <div class="photo-item pi-5 reveal"><img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=900&q=60" alt=""><span class="p-cap">GOLDEN HOUR</span></div>
+      <div class="photo-item pi-6 reveal"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1400&q=60" alt=""><span class="p-cap">MOUNTAIN / EVERYDAY</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- MOTION GRAPHICS -->
+<section class="motion" id="motiongraphics">
+  <div class="motion-shapes"><div class="mshape ms1"></div><div class="mshape ms2"></div><div class="mshape ms3"></div></div>
+  <div class="wrap">
+    <h2 class="motion-title reveal"><span>MOTION /</span><span class="m2">FRAME /</span><span>MOVEMENT</span></h2>
+    <p class="motion-desc reveal">SHAPE · TYPE · TIME — ANIMATED WITH INTENT</p>
+  </div>
+</section>
+
+<!-- BEYOND THE FRAME (DEV) -->
+<section class="dev" id="dev">
+  <div class="wrap dev-grid">
+    <div>
+      <div class="eyebrow reveal"><span class="dot"></span>BEYOND THE FRAME</div>
+      <h2 class="section-title reveal">BEYOND THE<br>FRAME</h2>
+      <p class="dev-lede reveal">Visual storytelling is my foundation, but I also enjoy building things.</p>
+      <p class="dev-body reveal">Alongside editing and shooting, I build small web projects and Java programs — interactive interfaces, simple ecommerce sites, and experiments in HTML, CSS and JavaScript. It's a different kind of timeline: one made of logic instead of frames.</p>
+      <div class="dev-list reveal">
+        <div class="dl-item"><span>JAVA PROJECTS</span><span>Console &amp; OOP basics</span></div>
+        <div class="dl-item"><span>ECOMMERCE SITES</span><span>Product, cart, checkout UI</span></div>
+        <div class="dl-item"><span>WEB INTERFACES</span><span>HTML / CSS / JavaScript</span></div>
+      </div>
+    </div>
+    <div class="code-card reveal">
+      <div class="code-head"><i style="background:#e8935a"></i><i style="background:#e8d95a"></i><i style="background:#5ae87a"></i><span>store.js</span></div>
+      <div class="code-body">
+<div class="cline"><span class="c1">const</span> cart = { items: [], total: <span class="c2">0</span> };</div>
+<div class="cline"></div>
+<div class="cline"><span class="c1">function</span> <span class="c3">addToCart</span>(product) {</div>
+<div class="cline">&nbsp;&nbsp;cart.items.push(product);</div>
+<div class="cline">&nbsp;&nbsp;cart.total += product.price;</div>
+<div class="cline">&nbsp;&nbsp;<span class="c3">renderCart</span>(cart);</div>
+<div class="cline">}</div>
+<div class="cline"></div>
+<div class="cline"><span class="c4">// keep it simple, keep it smooth</span></div>
+<div class="cline"><span class="c1">export</span> { cart, addToCart };</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats" id="stats">
+  <div class="stats-grid">
+    <div class="stat reveal"><div class="stat-num" data-count="19">0</div><div class="stat-label">YEARS OLD</div></div>
+    <div class="stat reveal"><div class="stat-num" data-count="4">0</div><div class="stat-label">CREATIVE DISCIPLINES</div></div>
+    <div class="stat reveal"><div class="stat-num" data-count="10" data-suffix="+">0</div><div class="stat-label">PROJECTS</div></div>
+    <div class="stat reveal"><div class="stat-num" data-infinity="1">0</div><div class="stat-label">IDEAS</div></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi" id="testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title reveal">WHAT PEOPLE<br>SAY</h2>
+      <p class="tc reveal">SCROLL →</p>
+    </div>
+  </div>
+  <div class="wrap testi-track-wrap">
+    <div class="testi-track">
+      <div class="testi-card reveal">
+        <p class="testi-quote">Manjil brought a level of care to our brand video that felt way beyond his experience. The pacing and color made the final edit feel genuinely cinematic.</p>
+        <div class="testi-who"><div><div class="testi-name">Placeholder Client</div><div class="testi-role">Founder, Local Studio</div></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <p class="testi-quote">We needed a shoot turned around fast and Manjil delivered stills and a highlight reel that looked far more polished than the budget suggested.</p>
+        <div class="testi-who"><div><div class="testi-name">Placeholder Client</div><div class="testi-role">Marketing Lead, Cafe Brand</div></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <p class="testi-quote">Easy to work with, clear communicator, and genuinely good taste. Our event photos and recap video were exactly the vibe we wanted.</p>
+        <div class="testi-who"><div><div class="testi-name">Placeholder Client</div><div class="testi-role">Organizer, Campus Event</div></div></div>
+      </div>
+      <div class="testi-card reveal">
+        <p class="testi-quote">He also helped us put together a simple ecommerce landing page — clean, fast, and easy for our team to manage ourselves after handoff.</p>
+        <div class="testi-who"><div><div class="testi-name">Placeholder Client</div><div class="testi-role">Small Business Owner</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow reveal" style="justify-content:center;"><span class="dot"></span>HAVE A PROJECT IN MIND?</div>
+    <h2 class="contact-title reveal">LET'S CREATE<br><span class="accent-word">SOMETHING.</span></h2>
+    <p class="contact-sub reveal">LET'S TALK — REPLY WITHIN 24 HOURS</p>
+    <a href="mailto:manjildangol81@gmail.com" class="contact-email reveal">MANJILDANGOL81@GMAIL.COM</a>
+    <div class="contact-links reveal">
+      <a href="https://www.instagram.com/_manjildangol/" target="_blank" rel="noopener">INSTAGRAM</a>
+      <a href="mailto:manjildangol81@gmail.com">EMAIL ME</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener">LINKEDIN</a>
+      <a href="https://github.com" target="_blank" rel="noopener">GITHUB</a>
+    </div>
+    <div class="footer">
+      <span class="tc">© 2026 MANJIL DANGOL</span>
+      <span class="tc">MADE IN NEPAL 🇳🇵</span>
+    </div>
+  </div>
+</section>
+
+<script src="op.js"></script>
+</body>
+</html>
