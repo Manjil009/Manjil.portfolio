@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Works — Manjil Dangol</title>
+<meta name="description" content="More work by Manjil Dangol.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="works-page">
+<div class="grain"></div>
+<div class="vignette"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"><span class="cursor-label" id="cursorLabel">VIEW</span></div>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">MD / DANGOL</a>
+  <div class="nav-links" id="navLinks"><a href="index.html#work" class="nav-link">WORK</a><a href="index.html#about" class="nav-link">ABOUT</a><a href="index.html#contact" class="nav-link">CONTACT</a></div>
+  <a href="index.html#contact" class="nav-cta">LET'S TALK</a>
+  <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<main class="works-main wrap">
+  <header class="works-intro">
+    <div><div class="eyebrow"><span class="dot"></span>ARCHIVE / 2024 — 2026</div><h1>MORE<br><span>WORK.</span></h1></div>
+    <div class="works-intro-copy"><strong>// YOUR WORKSPACE</strong>Upload images of your latest work and build a living archive of projects, experiments and visual stories.</div>
+  </header>
+  <div class="works-layout">
+    <section class="upload-panel" aria-labelledby="upload-title">
+      <h2 class="panel-label" id="upload-title">01 / ADD A PROJECT</h2>
+      <form class="upload-form" id="uploadForm">
+        <label>PROJECT TITLE<input id="projectTitle" type="text" maxlength="60" placeholder="e.g. Night Drive" required></label>
+        <label>DISCIPLINE<select id="projectType"><option>VIDEO</option><option>PHOTOGRAPHY</option><option>DESIGN</option><option>DEVELOPMENT</option></select></label>
+        <label>YEAR<input id="projectYear" type="number" min="2000" max="2100" value="2026" required></label>
+        <label>DESCRIPTION<textarea id="projectDescription" maxlength="240" placeholder="A short note about this work..."></textarea></label>
+        <label>PROJECT IMAGE<input id="projectImage" type="file" accept="image/*" required></label>
+        <button class="upload-submit" type="submit">ADD TO ARCHIVE <span>→</span></button>
+      </form>
+      <p class="upload-note">Images are saved in this browser for now. To make uploads visible to everyone, connect this form to a hosted database and file storage service.</p>
+    </section>
+    <section class="gallery-panel" aria-labelledby="gallery-title">
+      <div class="gallery-head"><h2 class="panel-label" id="gallery-title">02 / YOUR ARCHIVE</h2><span class="gallery-count" id="galleryCount">00 WORKS</span></div>
+      <div class="empty-state" id="emptyState">NO UPLOADS YET.<br>YOUR NEXT PIECE STARTS HERE.</div>
+      <div class="works-gallery" id="worksGallery"></div>
+    </section>
+  </div>
+</main>
+<script src="works.js"></script>
+</body>
+</html>
